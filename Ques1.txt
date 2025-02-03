@@ -1,0 +1,50 @@
+Q1  What is HTML, and how is an HTML document structured?
+
+HTML (Hyper Text Markup Language) is the language used to create and structure web pages. It defines the structure of a web page by using tags and attributes. The tags are used to specify different parts of the web page, such as headings,
+paragraphs, links, images, and other content.
+
+HTML5 -
+HTML5 is the latest version of the HTML standard, and it brought a lot of new features and improvements over previous versions. Its goal was to improve support for multimedia (audio, video) and modern web applications.
+1. New Structural Elements: HTML5 introduced semantic elements to help define the structure of a page more clearly
+<header> , <footer> , <nav> , <main> , <aside>
+2. Multimedia Elements: HTML5 introduced native support for embedding multimedia without needing third-party plugins like Flash.
+<audio> , <video>
+3. Geolocation: HTML5 provides an API for getting the user's geographic location through the browser.
+
+Structure of an HTML Document
+An HTML document has a specific structure made up of elements, most of which are nested inside each other.
+
+	<!DOCTYPE html>: This declaration defines the document type and version of HTML being used  It is placed at the very top of the document.
+
+	<html>: This is the root element that contains all of the HTML content.
+
+	<head>: This section contains meta-information about the document, such as the title of the page, character encoding, and links to stylesheets or scripts.
+Ex-
+<head>
+	<meta charset="UTF-8">
+	<title>My Web Page</title>
+</head>
+
+<body>: This section contains the actual content that is visible on the web page, such as text, images, and other media.
+
+Ex-
+
+	<body>
+    	<h1>Welcome to My Web Page</h1>
+    	<p>This is a paragraph of text on the page.</p>
+	</body>
+
+Example of an HTML Document:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple HTML Page</title>
+</head>
+<body>
+	<h1>Welcome to My Simple HTML Page</h1>
+	<p>This is a paragraph on the page.</p>
+</body>
+</html>

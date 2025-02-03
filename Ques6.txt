@@ -1,0 +1,27 @@
+
+Q6 What are IDs and classes in HTML, and how do they differ?
+
+ID in HTML-
+An ID is a unique identifier that is used to target a single, specific element in the HTML document.
+The id attribute is assigned to an element to give it a unique identifier.
+Example:
+<div id="header">This is the header section</div>
+Each ID must be unique within a page. No two elements on the same page can have the same id. This means that the ID can be used to uniquely reference or target that element.
+
+Class in HTML
+A class is used to group multiple elements together. It is not unique, so the same class can be applied to multiple elements on the page.
+The class attribute is assigned to an element to specify a common class that may be shared by multiple elements.
+Example:
+<div class="content">This is a content section.</div>
+<div class="content">This is another content section.</div>
+The same class name can be used on multiple elements within the same page. Unlike IDs, classes are not unique.
+
+Differences Between IDs and Classes
+                                     	ID                                                                                  Class
+                	Unique — only one element can have a specific ID in a page.                       Not unique — multiple elements can share the same class.
+Syntax                  	id="example"                                                                                 class="example"
+CSS Selector         	#example (uses # symbol)                                                                     .example (uses . symbol)
+Usage            	For uniquely identifying and styling a single element.                                 For styling or selecting multiple elements at once.
+JavaScript      	Accessed by document.getElementById()                                                   Accessed by document.getElementsByClassName()
+Purpose          	Typically used for one-time, unique styling or targeting an element.                Used for common styling and applying functionality to 
+                                                                                                                       multiple elements.

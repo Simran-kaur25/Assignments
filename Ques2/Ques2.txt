@@ -1,0 +1,61 @@
+Q2  Write the HTML code to create a table with 4 columns (ID, Employee Name, Designation, Department) and at least 6 rows.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Employee Table</title>
+</head>
+<body>
+	<h2>Employee Information</h2>
+	<table >
+    	<thead>
+        	<tr>
+            	<th>ID</th>
+            	<th>Employee Name</th>
+            	<th>Designation</th>
+            	<th>Department</th>
+        	</tr>
+    	</thead>
+    	<tbody>
+        	<tr>
+            	<td>1</td>
+            	<td>Simran Kaur</td>
+            	<td>Software Developer</td>
+            	<td>Development</td>
+        	</tr>
+        	<tr>
+            	<td>2</td>
+            	<td>Harjyot kaur</td>
+            	<td>Software Developer</td>
+            	<td>Developmentt</td>
+        	</tr>
+        	<tr>
+            	<td>3</td>
+            	<td>Hargun Kaur</td>
+            	<td>UX Designer</td>
+            	<td>Design</td>
+        	</tr>
+        	<tr>
+            	<td>4</td>
+            	<td>Ritika Ratan</td>
+            	<td>QA Engineer</td>
+            	<td>Quality Assurance</td>
+        	</tr>
+        	<tr>
+            	<td>5</td>
+            	<td>Rishika</td>
+            	<td>DevOps Engineer</td>
+            	<td>Infrastructure</td>
+        	</tr>
+        	<tr>
+            	<td>6</td>
+            	<td>Satvinder Kaur</td>
+            	<td>HR Manager</td>
+            	<td>Human Resources</td>
+        	</tr>
+    	</tbody>
+	</table>
+</body>
+</html>
