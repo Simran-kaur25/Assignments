@@ -1,0 +1,35 @@
+2. Explain the difference between absolute and relative positions.
+The difference between absolute and relative positioning in CSS is:
+
+    Relative Positioning (position: relative;)
+        The element is positioned relative to its normal position.
+        Moving it using top, right, bottom, or left shifts it from where it would normally be.
+        The space it originally occupied is still reserved.
+
+    Absolute Positioning (position: absolute;)
+        The element is removed from the normal document flow.
+        It is positioned relative to the nearest positioned ancestor (an ancestor with position: relative, absolute, or fixed).
+        If no such ancestor exists, it is positioned relative to the <html> (viewport).
+        The space it originally occupied is not reserved.
+
+Example:
+
+.parent {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: lightblue;
+}
+
+.child {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+Here, .child is positioned inside .parent because .parent has position: relative;.
+
+
+
+

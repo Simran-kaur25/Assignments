@@ -1,0 +1,41 @@
+4. How are inline and block elements different from each other?
+
+
+1. Inline Elements
+Do not start on a new line.
+Take up only as much width as necessary.
+Cannot have width and height explicitly set.
+Allow other elements to appear next to them in the same line.
+
+Examples:
+<p>This is a <span style="color: red;">red word</span> inside a paragraph.</p>
+<a href="#">Click Here</a>
+
+In above example:
+<span> is an inline element, so it does not break the paragraph structure.
+<a> is also inline, so multiple links can be placed in a single line.
+Common Inline Elements:
+<span> – Used for styling a part of text.
+<a> – Used for hyperlinks.
+<b>, <i>, <u>, <strong>, <em> – Formatting elements.
+<img> – Displays an image within a line.
+
+2. Block Elements
+Always start on a new line.
+Take up the full width of their parent container.
+Support width, height, margin, and padding.
+Stack vertically by default.
+
+Examples:
+<div style="background-color: lightblue;">This is a block element</div>
+<p>This is a paragraph.</p>
+<h1>This is a heading</h1>
+
+In above example:
+<div>, <p>, and <h1> are block elements, so each starts on a new line.
+Common Block Elements:
+<div> – Generic container.
+<p> – Paragraph.
+<h1> to <h6> – Headings.
+<ul>, <ol>, <li> – Lists.
+<form>, <table>, <section>, <article>, <footer>, <header> – Structural elements.

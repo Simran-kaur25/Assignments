@@ -1,0 +1,55 @@
+3. What are the different types of CSS Selectors?
+
+CSS selectors are used to target HTML elements on your pages, allowing you to apply styles based on their ID, class, type attributes, and more. 
+
+There are mainly 5 types of selectors.
+
+Basic CSS Selectors: These are used to target elements by tag, .class, or #id for fundamental styling needs.
+Combinators: Ideal for styling elements based on their DOM relationships (e.g., parent-child or sibling relationships).
+Group Selectors: Use to apply the same styles to multiple, unrelated elements simultaneously.
+Attribute Selectors: Perfect for styling elements based on specific attributes or values, such as form inputs or links with certain prefixes or states.
+Pseudo-Classes: Best for styling elements dynamically or interactively, like :hover for user interaction or :nth-child() for structural styling.
+
+Types of CSS Selectors
+Basic Selectors -
+Basic selectors in CSS are simple tools used to target specific HTML elements for styling.
+1. Universal Selector (*): Selects all elements on the page and applies the same style universally. 
+For example, setting the font color for every element.
+* {
+    color: red;
+  }
+
+
+2. Element Selector: Targets all elements of a specific type, such as paragraphs or headers. 
+For example, setting a common font size for all paragraphs
+p {
+    font-size: 16px;
+}
+
+3. Class Selector (.): Applies styles to elements with a specific class attribute. 
+For example, making all buttons have a blue background.
+.button {
+    background-color: blue;
+    color: white;
+}
+
+4. ID Selector (#): Styles a single element identified by its unique id. 
+For example, changing the background color of a header
+       #header {
+           background-color: gray;
+       }
+
+Combinator Selectors
+Combinators in CSS are used to define relationships between selectors, allowing you to style elements based on their hierarchy or positioning in the document. Common combinators include descendant ( ), child (>), adjacent sibling (+), and general sibling (~).
+1. Descendant Selectors
+2. Child Selector (>)
+3. Adjacent Sibling Selector (+):
+4. General Sibling Selector (~): 
+
+Attribute Selectors
+Attribute selectors in CSS target elements based on the presence or value of their attributes. Examples include [attr] (selects elements with the attribute), [attr=”value”] (matches specific values), and [attr^=”val”] (matches values starting with “val”).
+1. Presence Selector: 
+2. Attribute Value Selector: It targets elements with a particular attribute value. For example, styling text inputs.
+3. Substring Matching(^=): It matches elements where the attribute contains a substring. For example, styling links with https in their href.
+4. Wildcard Selector (*=): Matches elements where the attribute value contains a specific string. For example, underlining links with example in the URL.
+
