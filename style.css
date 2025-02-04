@@ -141,3 +141,77 @@ footer ul li {
     margin-top: 20px;
     text-align: center;
 }
+
+/* .hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+@media (max-width: 768px){
+    .hamburger{
+        display: block;
+} }*/
+.hamburger {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+    background: #222;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 200px;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    list-style: none;
+    z-index: 999;
+}
+
+.mobile-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    cursor: pointer;
+}
+
+.mobile-menu li:hover {
+    background: orange;
+}
+
+
+.hamburger:hover .mobile-menu {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
