@@ -1,0 +1,40 @@
+// Create a list of objects of Employee with info as follows:
+// Name, Age, Salary, DoB
+
+// 1. Filter all employees with salary greater than 5000
+// 2. Group employee based on their age
+// 3. Fetch employees with salary less than 1000 and age greater than 20. Then give them an increment of 5 times their salary.
+
+const employees = [
+    { name: "Simram", age: 20, salary: 6000, dob: "1998-05-12" },
+    { name: "Simy", age: 20, salary: 4000, dob: "1993-08-20" },
+    { name: "Annie", age: 22, salary: 8000, dob: "2001-02-15" },
+    { name: "Dili", age: 21, salary: 900, dob: "2002-07-10" },
+    { name: "Dilpreet", age: 35, salary: 500, dob: "1989-11-05" }
+  ];
+  
+  // 1. Employees with salary > 5000
+  const highSalary = employees.filter(emp => emp.salary > 5000);
+  console.log(highSalary);
+  
+  // 2. Group employees by age
+  const ageGroups = {};
+  employees.forEach(emp => {
+    if (!ageGroups[emp.age]) {
+      ageGroups[emp.age] = [];
+    }
+    ageGroups[emp.age].push(emp);
+  });
+  console.log(ageGroups);
+  
+
+  // 3. Fetch employees with salary less than 1000 and age greater than 20, then give them an increment of 5 times their salary
+  const updatedEmployees = employees
+    .filter(employee => employee.salary < 1000 && employee.age > 20)
+    .map(employee => {
+      employee.salary = employee.salary * 5;
+      return employee;
+    });
+  console.log("Updated employees with incremented salary:", updatedEmployees);
+  
+  

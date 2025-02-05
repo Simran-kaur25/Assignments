@@ -1,0 +1,34 @@
+// Given an array of employees, perform the following:
+
+// Calculate the total salary of all employees.
+// Get the names of all employees in the "IT" department.
+// Find the employee with the highest salary.
+
+// const employees = [
+//   { name: "Alice", department: "IT", salary: 60000 },
+//   { name: "Bob", department: "HR", salary: 50000 },
+//   { name: "Charlie", department: "IT", salary: 75000 },
+//   { name: "David", department: "Finance", salary: 80000 }
+// ];
+
+const employees = [
+    { name: "Alice", department: "IT", salary: 60000 },
+    { name: "Bob", department: "HR", salary: 50000 },
+    { name: "Charlie", department: "IT", salary: 75000 },
+    { name: "David", department: "Finance", salary: 80000 }
+  ];
+  
+  // 1. Calculate the total salary of all employees
+  const totalSalary = employees.reduce((total, employee) => total + employee.salary, 0);
+  console.log("Total Salary: " + totalSalary);
+  
+  // 2. Get the names of all employees in the "IT" department
+  const itEmployees = employees.filter(employee => employee.department === "IT").map(employee => employee.name);
+  console.log("IT Employees: " + itEmployees.join(", "));
+  
+  // 3. Find the employee with the highest salary
+  const highestPaidEmployee = employees.reduce((highest, employee) => {
+    return (employee.salary > highest.salary) ? employee : highest;
+  });
+  console.log("Employee with highest salary: " + highestPaidEmployee.name);
+  

@@ -1,0 +1,89 @@
+// Ques 2 What are data types in Javascript? Explain the different types of data types with examples.
+
+In JavaScript, data types are categorized into two types:
+Primitive Data Types
+Non Primitive Data Types (Reference Types)
+
+1. Primitive DataType:
+These are immutable types that hold a single value and do not have methods. They are directly stored in memory.
+
+a. String:
+Represents a sequence of characters.
+
+let name = "John";
+console.log(typeof name); // "string"
+
+b. Number:
+
+Represents both integer and floating point numbers.
+
+let age = 25;
+let price = 19.99;
+console.log(typeof age); // "number"
+console.log(typeof price); // "number"
+
+c. BigInt:
+
+Represents integers with arbitrary precision, allowing you to store numbers larger than the Number type can hold.
+
+let bigNumber = 1234567890123456789012345678901234567890n;
+console.log(typeof bigNumber); // "bigint"
+
+d. Boolean:
+
+Represents a logical entity that can have two values: true or false.
+
+let isActive = true;
+console.log(typeof isActive); // "boolean"
+
+e. Undefined:
+
+Represents a variable that has been declared but not assigned a value.
+
+let city;
+console.log(typeof city); // "undefined"
+
+f. Null:
+
+Represents an intentional absence of any object value. It is a primitive type but behaves like an object in some cases.
+
+let person = null;
+console.log(typeof person); // "object" 
+
+g. Symbol:
+
+A unique and immutable data type, typically used to create unique identifiers for object properties.
+
+let uniqueSymbol = Symbol('description');
+console.log(typeof uniqueSymbol); // "symbol"
+
+
+
+2. Non-Primitive Data Types (Reference Types):
+
+These are mutable types and store references to memory locations.
+a. Object:
+
+Represents a collection of key-value pairs, where the keys are strings (or symbols), and the values can be any data type.
+
+let person = {
+    name: "Alice",
+    age: 30
+};
+console.log(typeof person); // "object"
+
+b. Array:
+
+A special type of object that is used for storing ordered collections of values (can be of different data types).
+
+let fruits = ["apple", "banana", "cherry"];
+console.log(typeof fruits); // "object"
+
+c. Function:
+
+Functions in JavaScript are first-class objects, meaning they can be treated like any other object.
+
+let greet = function() {
+    console.log("Hello!");
+};
+console.log(typeof greet); // "function"
